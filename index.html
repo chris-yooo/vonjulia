@@ -1,0 +1,34 @@
+<!-- 
+Notice: you find a simpler, non-accessible version here: https://codepen.io/neuefische/pen/podbzmL.
+-->
+<form aria-label="Create a card" data-js="form" autocomplete="off">
+  <label for="question-input">Question:</label>
+  <textarea
+    required
+    name="question"
+    id="question-input"
+    placeholder="Why ...?"
+  ></textarea>
+
+  <label for="answer-input">Answer:</label>
+  <textarea
+    required
+    name="answer"
+    id="answer-input"
+    placeholder="Because ...!"
+  ></textarea>
+
+  <label for="tags-input">Tags:</label>
+  <input name="tags" id="tags-input" placeholder="html, css, more..." />
+
+  <button>Create Card</button>
+</form>
+
+<ul
+  aria-live="polite"
+  aria-atomic="true"
+  aria-relevant="additions"
+  role="list"
+  class="card-list"
+  data-js="cards"
+></ul>
