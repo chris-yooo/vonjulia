@@ -18,13 +18,14 @@ form.addEventListener("submit", (event) => {
       .map((tag) => tag.trim())
       .filter((tag) => tag.length),
   };
-
+  
   cards = [newCard, ...cards];
+
   renderCards();
 
   form.reset();
   // this moves the focus and is considered bad practice:
-  // questionElement.focus();
+  //questionElement.focus();
 });
 
 function renderCards() {
