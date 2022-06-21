@@ -1,34 +1,47 @@
-<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="javascript" src="./base.js" defer></script>
+    <script type="css" src="./style.css"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
 Notice: you find a simpler, non-accessible version here: https://codepen.io/neuefische/pen/podbzmL.
 -->
-<form aria-label="Create a card" data-js="form" autocomplete="off">
-  <label for="question-input">Question:</label>
-  <textarea
-    required
-    name="question"
-    id="question-input"
-    placeholder="Why ...?"
-  ></textarea>
+    <form aria-label="Create a card" data-js="form" autocomplete="off">
+      <label for="question-input">Question:</label>
+      <textarea
+        required
+        name="question"
+        id="question-input"
+        placeholder="Why ...?"
+      ></textarea>
 
-  <label for="answer-input">Answer:</label>
-  <textarea
-    required
-    name="answer"
-    id="answer-input"
-    placeholder="Because ...!"
-  ></textarea>
+      <label for="answer-input">Answer:</label>
+      <textarea
+        required
+        name="answer"
+        id="answer-input"
+        placeholder="Because ...!"
+      ></textarea>
 
-  <label for="tags-input">Tags:</label>
-  <input name="tags" id="tags-input" placeholder="html, css, more..." />
+      <label for="tags-input">Tags:</label>
+      <input name="tags" id="tags-input" placeholder="html, css, more..." />
 
-  <button>Create Card</button>
-</form>
+      <button>Create Card</button>
+    </form>
 
-<ul
-  aria-live="polite"
-  aria-atomic="true"
-  aria-relevant="additions"
-  role="list"
-  class="card-list"
-  data-js="cards"
-></ul>
+    <ul
+      aria-live="polite"
+      aria-atomic="true"
+      aria-relevant="additions"
+      role="list"
+      class="card-list"
+      data-js="cards"
+    ></ul>
+  </body>
+</html>
